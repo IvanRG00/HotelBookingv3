@@ -1,6 +1,34 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    
+    ViewData["Title"] = "About us";
 }
+<script>
+  var apiKey = 'AIzaSyDyz9_smBTooZSXKqq-hyVkDKFT2e5optU';
+</script>
 <h1>@ViewData["Title"]</h1>
+<div id="containercontainerAboutus">
+<p>If you want to contact our organization you can call us at number: 0884316324.</p>
+<p> You can also visit us at our office  at: 11 ул. „проф. Атанас Иширков“</p>
+<div id="map" style="height: 400px;"></div>
 
-<p>Use this page to detail your site's privacy policy.</p>
+
+@section scripts {
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyz9_smBTooZSXKqq-hyVkDKFT2e5optU&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+                var location = { lat: 42.64612480146975, lng: 23.34109008399394 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: location,
+                zoom: 12
+            });
+
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Your Location'
+            });
+        }
+    </script>
+    }
+   
