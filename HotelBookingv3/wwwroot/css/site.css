@@ -20,6 +20,7 @@ body {
     background-size: cover;
 }
 
+
 #containerRegisterPage {
     background-color: white;
     border-radius: 20px;
@@ -45,6 +46,30 @@ body {
 }
 
 
+
+#containerManageAccount {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+
+#containerHome {
+    background-color: white;
+    background-image: url('../Image/b99b565b-5336-4cd2-b731-c64c24515600_rw_1200.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    border: 5px solid #ffffff;
+    margin: 20px;
+    padding: 260px;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
 
 
 #containerHome {
@@ -72,6 +97,17 @@ body {
     padding: 20px;
 }
 
+#containerhoteledit {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#containerhoteldelete {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
 #containercontainerAboutus {
     background-color: white;
     border-radius: 20px;
